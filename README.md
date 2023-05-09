@@ -1,6 +1,6 @@
 <p align="center"><h1>🧠 Awesome Midjourney Prompts</h1></p>  
 
-<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"/><img src="https://raw.githubusercontent.com/steamship-core/python-client/main/badge.svg"/><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%23FD1768&title_bg=%231F1D1D&icon=powershell.svg&icon_color=%23E7E7E7&title=MJ&edge_flat=false"/>
+<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" style="margin-left:10px;" /><img src="https://raw.githubusercontent.com/steamship-core/python-client/main/badge.svg" style="margin-left:10px;" /><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%23FD1768&title_bg=%231F1D1D&icon=powershell.svg&icon_color=%23E7E7E7&title=MJ&edge_flat=false" style="margin-left:10px;"  />
 
 Midjourney Prompts提示词助手，提供可视化生成看板，小白一键成MJ作图大师。收录最全的提示词和指令集，目前免费提供使用，支持随意嵌入到你的网站。(更新23-05-10，支持V5.1)
 
