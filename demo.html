@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试Demo</title>
+  <script src="./iframe-share.js"></script>
+  <style>
+    button {
+      outline: none;
+      border: none;
+      background-color: red;
+      font-size: 18px;
+      color: white;
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="./images/6-res.png" width="50%" alt="">
+  <div>
+    <button class="btn-target">点击打开抽屉</button>
+  </div>
+</body>
+<script>
+  IframeShare(
+    {
+      btnEl: 'btn-target',
+      url: "https://punk.openai1s.com/aiimg/prompt?nohead=1&postmsg=1",
+      mode: "slider",
+      position: 'right',
+      width: '650px',
+      preload: true,
+      defaultOpen: false,
+      allowRepeatSubmit: true
+    });
+  //监听prompt参数
+  window.addEventListener('message', function (event) {
+    console.log(event.data, '打印加工后的prompt')
+  });
+</script>
+
+</html>
