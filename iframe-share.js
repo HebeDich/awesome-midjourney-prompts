@@ -516,6 +516,9 @@ function IframeShare(config) {
           }),
             a.setAttribute("data-position", config.position),
             isHasPopup(!1);
+          setTimeout(() => {
+            dom("IframeShare-loading").style.display = "none";
+          }, 1000);
         }
       }),
       500
