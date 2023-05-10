@@ -87,10 +87,14 @@ Midjourney Prompts提示词助手，提供可视化生成看板，小白一键�
 url="https://punk.openai1s.com/aiimg/prompt?nohead=1&postmsg=1"
 ```
 嵌入版-推荐
-<p><img src="./images/nohead.png" width="600"/></p>
+<p><img src="./images/nohead.png" width="600" /></p>
 弹窗版
 
-<p><img src="./images/tan.png" width=600"/></p>
+<p><img src="./images/tan.png" width="600" /></p>
+
+# Midjourney交流群
+> 麻烦大佬们备注下来源
+<p><img src="./qun.png" width="300" /></p>
 
 # Star History
 
