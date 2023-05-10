@@ -16,14 +16,20 @@
       color: white;
       padding: 1rem;
     }
+
+    #Prompts {
+      width: 400px;
+      height: 200px;
+    }
   </style>
 </head>
 
 <body>
-  <img src="./images/6-res.png" width="50%" alt="">
   <div>
     <button class="btn-target">点击打开抽屉</button>
+    <div><textarea id="Prompts" placeholder="这里输出指令"></textarea></div>
   </div>
+  <img src="./images/6-res.png" width="30%" alt="">
 </body>
 <script>
   IframeShare(
@@ -38,8 +44,12 @@
       allowRepeatSubmit: true
     });
   //监听prompt参数
+  const prompts = document.getElementById('Prompts')
   window.addEventListener('message', function (event) {
-    console.log(event.data, '打印加工后的prompt')
+    if (event.origin === 'https://punk.openai1s.com') {
+      console.log(event.data, '打印加工后的prompt')
+      prompts.innerHTML = event.data
+    }
   });
 </script>
 
