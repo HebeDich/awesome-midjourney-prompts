@@ -46,25 +46,34 @@ Midjourney Prompts提示词助手，提供可视化生成看板，小白一键�
 网站可以无缝嵌入工具，并通过`postMessage`模式接受加工后的`prompts`
 ```html
  
- <button class="btn-target">点击打开抽屉</button>
- <script src="./iframe-share.js"></script>
- <script> 
- IframeShare(
-  { 
-    btnEl: 'btn-target', 
-    url: "https://punk.openai1s.com/aiimg/prompt", 
-    mode: "slider", 
-    position: 'right', 
-    width: '550px', 
-    preload: true, 
-    defaultOpen: false, 
-    allowRepeatSubmit: true 
-  }); 
+ <body>
+  <div>
+    <button class="btn-target">点击打开抽屉</button>
+    <div><textarea id="Prompts" placeholder="这里输出指令"></textarea></div>
+  </div>
+  <img src="./images/6-res.png" width="30%" alt="">
+</body>
+<script>
+  IframeShare(
+    {
+      btnEl: 'btn-target',
+      url: "https://punk.openai1s.com/aiimg/prompt?nohead=1&postmsg=1",
+      mode: "slider",
+      position: 'right',
+      width: '650px',
+      preload: true,
+      defaultOpen: false,
+      allowRepeatSubmit: true
+    });
   //监听prompt参数
-  window.addEventListener('message', function(event) {
-  console.log(event.data)
+  const prompts = document.getElementById('Prompts')
+  window.addEventListener('message', function (event) {
+    if (event.origin === 'https://punk.openai1s.com') {
+      console.log(event.data, '打印加工后的prompt')
+      prompts.innerHTML = event.data
+    }
   });
- </script>
+</script>
 
 ```
 通过参数配置，可以自定义隐藏不需要的内容，更高效地使用Prompt工具。
